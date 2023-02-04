@@ -1,0 +1,259 @@
+@import url('https://fonts.google.com/specimen/Montserrat?query=monts');
+
+
+* { 
+    font-family: 'Montserrat';
+}
+
+html{ 
+    scroll-behavior: smooth;
+}
+
+
+header.header img{
+    width: 80px;
+    cursor: pointer;
+   
+   
+}
+
+header.header{ 
+    display: flex;
+    align-items: center;
+
+}
+body {
+    margin: 0 auto;
+}
+
+section.top-page {
+    background: url("/assets/img/pexels-muhammad-khairul-iddin-adnan-808510.jpg");
+    background-size: cover;
+    height: 80vh;
+    padding: 20px;
+}
+
+
+/********* Landing page ************/
+
+.landing-page { 
+    
+    padding: 20px 50px;
+}
+.huge-title { 
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    color: white;
+    width: 38%;
+}
+
+
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 160px;
+    transition: 0.3s;
+    color: white;
+}
+.scroll-down:hover{ 
+    color:#ADD981 ;
+}
+
+/****** Bare de navigation****/
+nav.nav { 
+justify-content: space-between;
+display: flex;
+list-style-type: none;
+width: 400px;
+margin-left: 800px;
+transition: 0.3s;
+color: white;
+cursor: pointer;
+}
+
+nav.nav:hover {
+    color: #ADD981;
+}
+
+/*******************************/
+/**** Services****/
+
+.services {
+ display: flex;
+ justify-content: space-evenly;
+ margin: 50px;
+ 
+}
+
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+
+.service-details{ 
+    font-weight: 500;
+    width: 200px;
+    text-align: center;
+    
+    
+}
+
+
+/**********************/
+/*********BEST SELLERS******/
+.section-title{ 
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    position: relative;
+
+}
+
+.section-title::before{ 
+    content:"";
+    position: absolute;
+    background-color:#ADD981 ;
+    width: 50px;
+    height: 6px;
+    bottom: 0;
+   
+}
+
+/****************************/
+/**** BEST SELLERS********/
+.bests-items{
+    margin: 50px;
+}
+.best-plants{ 
+    background: #AAA;
+    min-height:500px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.plant-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.no-grid{ 
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+    
+}
+
+.plants1{ 
+    background-image: url(/assets/img/plants1.jpg);
+}
+
+.plants2{ 
+    background-image: url(/assets/img/plants2.jpg);
+}
+
+.plants3{ 
+    background-image: url(/assets/img/plants3.jpg);
+}
+
+.plants4{ 
+    background-image: url(/assets/img/plants4.jpg);
+}
+
+
+.plant-details{
+    background-color: #FFFFFFDF;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 20px;
+
+ }
+
+
+ .plant-name{ 
+    font-size: 22px;
+    font-weight: 550;
+    line-height: 2px;
+ }
+
+ .plant-price{ 
+    color: #ADD981;
+    font-weight: 150vh;
+    line-height: 2px;
+    font-size: 15px;
+ }
+
+ /*************/
+ /******ALL PLANTS*****/
+
+ .all-plants{
+    margin: 50px;
+ }
+
+ .plant-grid{ 
+    
+  display: grid;
+  min-height: 150vh ;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,400px);
+ }
+ .plant-grid1{
+    background-image: url(/assets/img/plant-grid1.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+ }
+ .plant-grid2{
+    background-image: url(/assets/img/plant-grid2.jpg);
+    grid-column: 3/5;
+    
+ }
+ .plant-grid3{
+    background-image: url(/assets/img/plant-grid3.jpg);
+    grid-column: 3/5;
+ }
+ .plant-grid4{
+    background-image: url(/assets/img/plant-grid4.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+ }
+ .plant-grid5{
+    background-image: url(/assets/img/plant-grid5.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+
+ }
+ .plant-grid6{
+    background-image: url(/assets/img/plant-grid6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+ }
+
+
+
+ /***************************/
+ /***** FOOTER************/
+ footer{
+    display: flex;
+    align-items: center;
+    margin: 20px 100px;
+    justify-content: space-between;
+    font-weight: 600;
+ }
+
+ footer a.cgv{ 
+    text-decoration: none;
+    color: black;
+ }
